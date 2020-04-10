@@ -17,7 +17,7 @@
   <meta name="description" content="">
   <meta name="author" content="John Doe">
   <meta name="keywords" content="">
-  <title>Hexo</title>
+  <title>Python 常用操作 - Hexo</title>
 
   <link  rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/5.12.1/css/all.min.css" />
 <link  rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/css/bootstrap.min.css" />
@@ -121,6 +121,33 @@
             </span>
 
             
+              
+                <p class="mt-3 post-meta">
+                  <i class="fas fa-calendar-alt" aria-hidden="true"></i>
+                  Friday, April 10th 2020, 4:08 pm
+                </p>
+              
+
+              <p class="mt-1">
+                
+                  
+                  <span class="post-meta">
+                    <i class="far fa-chart-bar"></i>
+                    195 字
+                  </span>
+                
+
+                
+                  
+                  <span class="post-meta">
+                      <i class="far fa-clock"></i>
+                      1 分钟
+                  </span>
+                
+
+                
+              </p>
+            
           </div>
 
           
@@ -131,140 +158,111 @@
 
   <main>
     
-      <div class="container nopadding-md">
-        <div class="py-5 z-depth-3" id="board"
-          >
-          
-          <div class="container">
-            <div class="row">
-              <div class="col-12 col-md-10 m-auto">
-                
+      
 
-
-  <div class="row mx-auto index-card">
-    
-    
-    <div class="col-12 col-md-12 mx-auto index-info">
-      <a href="/2020/04/10/%E5%B8%B8%E7%94%A8/">
-        <p class="h4 index-header">Python 常用操作</p>
-      </a>
-
-      <a href="/2020/04/10/%E5%B8%B8%E7%94%A8/">
-        
-        
-          
-        
-        <div class="index-excerpt" >
-          <div class="index-text mb-1">Python 常用操作1 Python随机生成的几种方法各种随机：
-import random
+<div class="container-fluid">
+  <div class="row">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-md">
+      <div class="container nopadding-md" id="board-ctn">
+        <div class="py-5 z-depth-3" id="board">
+          <div class="post-content mx-auto" id="post">
+            
+            <div class="markdown-body">
+              <h1 id="Python-常用操作"><a href="#Python-常用操作" class="headerlink" title="Python 常用操作"></a>Python 常用操作</h1><h2 id="1-Python随机生成的几种方法"><a href="#1-Python随机生成的几种方法" class="headerlink" title="1 Python随机生成的几种方法"></a>1 Python随机生成的几种方法</h2><p>各种随机：</p>
+<pre><code>import random
 random.uniform(10,20) #random generate [10,20] 的 float
 random.randint(20,30) #random generate [20,30] 的 整数
 random.randrange(0,101,2) #随机选取0到100间的偶数
 random.choice(&#39;abcdefg&amp;#%^*f&#39;) #随机字符
-random.choice ( [&#39;apple&#39;,&#39;pear&#39;, &#39;p</div>
-        </div>
-      </a>
-
-      <div class="index-btm">
-        
-          <i class="iconfont icon-riqi2"></i>&nbsp;2020-04-10&nbsp;&nbsp;
-        
-        
-          <i class="iconfont icon-inbox"></i>
-          
-            <a href="/categories/Python/">Python</a>&nbsp;
-          &nbsp;
-        
-        
-      </div>
-    </div>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <div class="col-12 col-md-12 mx-auto index-info">
-      <a href="/2020/04/10/%E7%96%91%E6%83%91/">
-        <p class="h4 index-header">疑惑</p>
-      </a>
-
-      <a href="/2020/04/10/%E7%96%91%E6%83%91/">
-        
-        
-          
-        
-        <div class="index-excerpt" >
-          <div class="index-text mb-1">
-title: Python 常用操作date: 2020-04-10 16:08:00categories: Python
-一直以来的疑惑，今天终于解决了
-描述现在有一个随机数：
-a=random.uniform(10,20)想要输入以下效果：
-&quot;15.31&quot;就要走一下步骤：
-b = float(format(a,&#39;.3f&#39;))
-strb = str(b)
-print(&quot;\&quot;&quot;+strb+&quot;\&quot;&quot;)致谢感谢wwh曾经在量化分析时给我提供的思路
-</div>
-        </div>
-      </a>
-
-      <div class="index-btm">
-        
-          <i class="iconfont icon-riqi2"></i>&nbsp;2020-04-10&nbsp;&nbsp;
-        
-        
-        
-      </div>
-    </div>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <div class="col-12 col-md-12 mx-auto index-info">
-      <a href="/2020/04/09/The%20first/">
-        <p class="h4 index-header">Test</p>
-      </a>
-
-      <a href="/2020/04/09/The%20first/">
-        
-        
-          
-        
-        <div class="index-excerpt" >
-          <div class="index-text mb-1">你好啊
-</div>
-        </div>
-      </a>
-
-      <div class="index-btm">
-        
-          <i class="iconfont icon-riqi2"></i>&nbsp;2020-04-09&nbsp;&nbsp;
-        
-        
-          <i class="iconfont icon-inbox"></i>
-          
-            <a href="/categories/%E7%94%9F%E6%B4%BB/">生活</a>&nbsp;
-          &nbsp;
-        
-        
-          <i class="iconfont icon-tag"></i>
-          
-            <a href="/tags/%E5%B0%8F%E7%AA%8D%E9%97%A8/">小窍门</a>&nbsp;
-          
-        
-      </div>
-    </div>
-  </div>
-
-
-
-
-
-              </div>
+random.choice ( [&#39;apple&#39;,&#39;pear&#39;, &#39;peach&#39;, &#39;orange&#39;, &#39;lemon&#39;] ) #随机选取字符串</code></pre><p>洗牌：  </p>
+<pre><code>items = [1, 2, 3, 4, 5, 6]  
+random.shuffle(items)  </code></pre><h2 id="2-保留有效数位"><a href="#2-保留有效数位" class="headerlink" title="2 保留有效数位"></a>2 保留有效数位</h2><h3 id="字符串"><a href="#字符串" class="headerlink" title="字符串"></a>字符串</h3><p>保留有效数字：</p>
+<pre><code> format(12.456789, &#39;.3g&#39;)
+&#39;12.5&#39;</code></pre><p>小数点后n位：</p>
+<pre><code>`format(12.456789,&#39;.3f&#39;)</code></pre><p>科学计数法：</p>
+<pre><code>format(12.456789, &#39;.3e&#39;)
+&#39;1.246e+01&#39;</code></pre><p>换成百分比之后保留小数点后n位数：</p>
+<pre><code>format(12.456789, &#39;.3%&#39;)
+&#39;1245.679%&#39;</code></pre><p>浮点数：</p>
+<pre><code>float(format(12.456789, &#39;.3g&#39;))</code></pre>
             </div>
+            <hr>
+            <div>
+              <p>
+                
+                  <span>
+                <i class="iconfont icon-inbox"></i>
+                    
+                      <a class="hover-with-bg" href="/categories/Python/">Python</a>
+                      &nbsp;
+                    
+                  </span>&nbsp;&nbsp;
+                
+                
+              </p>
+              
+                <p class="note note-warning">本博客所有文章除特别声明外，均采用 <a href="https://zh.wikipedia.org/wiki/Wikipedia:CC_BY-SA_3.0%E5%8D%8F%E8%AE%AE%E6%96%87%E6%9C%AC" target="_blank" rel="nofollow noopener noopener">CC BY-SA 3.0协议</a> 。转载请注明出处！</p>
+              
+              
+                <div class="post-prevnext row">
+                  <div class="post-prev col-6">
+                    
+                    
+                  </div>
+                  <div class="post-next col-6">
+                    
+                    
+                      <a href="/2020/04/10/%E7%96%91%E6%83%91/">
+                        <span class="hidden-mobile">疑惑</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="fa fa-chevron-right"></i>
+                      </a>
+                    
+                  </div>
+                </div>
+              
+            </div>
+
+              
+                <!-- Comments -->
+                <div class="comments" id="comments">
+                  
+                  
+  <script defer src="https://utteranc.es/client.js"
+          repo="HelloJackZhao/BlogComs"
+          issue-term="pathname"
+  
+          label="utterances"
+    
+          theme="github-light"
+          crossorigin="anonymous"
+  >
+  </script>
+
+
+                </div>
+              
           </div>
         </div>
       </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc-start"></div>
+<div id="toc">
+  <p class="h5"><i class="far fa-list-alt"></i>&nbsp;TOC</p>
+  <div id="tocbot"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
     
   </main>
 
@@ -351,6 +349,59 @@ print(&quot;\&quot;&quot;+strb+&quot;\&quot;&quot;)致谢感谢wwh曾经在量�
 
 
 
+  
+  <script  src="https://cdn.staticfile.org/tocbot/4.10.0/tocbot.min.js" ></script>
+  <script>
+    $(document).ready(function () {
+      var navHeight = $('#navbar').height();
+      var toc = $('#toc');
+      var boardCtn = $('#board-ctn');
+      var boardTop = boardCtn.offset().top;
+      var tocLimMax = 2 * boardTop + boardCtn.height();
+
+      $(window).scroll(function () {
+        var tocLimMin = $('#toc-start').offset().top - navHeight;
+        var scroH = document.body.scrollTop + document.documentElement.scrollTop;
+
+        if (tocLimMin <= scroH && scroH <= tocLimMax) {
+          toc.css({
+            'display': 'block',
+            'position': 'fixed',
+            'top': navHeight,
+          });
+        } else if (scroH <= tocLimMin) {
+          toc.css({
+            'position': '',
+            'top': '',
+          });
+        } else if (scroH > tocLimMax) {
+          toc.css('display', 'none');
+        }
+      });
+      tocbot.init({
+        tocSelector: '#tocbot',
+        contentSelector: '.post-content',
+        headingSelector: 'h1,h2,h3,h4,h5,h6',
+        linkClass: 'tocbot-link',
+        activeLinkClass: 'tocbot-active-link',
+        listClass: 'tocbot-list',
+        isCollapsedClass: 'tocbot-is-collapsed',
+        collapsibleClass: 'tocbot-is-collapsible',
+        scrollSmooth: true,
+        headingsOffset: -boardTop
+      });
+      if ($('.toc-list-item').length > 0) {
+        $('#toc > p').css('visibility', 'visible');
+      }
+      var offset = boardCtn.css('margin-right')
+      $('#toc-ctn').css({
+        'right': offset
+      })
+    });
+  </script>
+
+
+
 
 
   <script defer src="https://cdn.staticfile.org/clipboard.js/2.0.6/clipboard.min.js" ></script>
@@ -382,7 +433,7 @@ print(&quot;\&quot;&quot;+strb+&quot;\&quot;&quot;)致谢感谢wwh曾经在量�
     var typed = new Typed('#subtitle', {
       strings: [
         '  ',
-        "Life is short&nbsp;",
+        "Python 常用操作&nbsp;",
       ],
       cursorChar: "_",
       typeSpeed: 70,
