@@ -46,11 +46,11 @@
 
 
 <body>
-  <header style="height: 100vh;">
+  <header style="height: 40vh;">
     <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
   <div class="container">
     <a class="navbar-brand"
-       href="/">&nbsp;<strong>Fluid</strong>&nbsp;</a>
+       href="/">&nbsp;<strong>JackZhao</strong>&nbsp;</a>
 
     <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
             data-target="#navbarSupportedContent"
@@ -122,7 +122,7 @@
          style="background: url('/img/default.png') no-repeat center center;
            background-size: cover;">
       <div class="full-bg-img">
-        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0)">
           <div class="container text-center white-text fadeInUp">
             <span class="h2" id="subtitle">
               
@@ -131,10 +131,6 @@
             
           </div>
 
-          
-            <div class="scroll-down-bar">
-              <i class="iconfont icon-arrowdown"></i>
-            </div>
           
         </div>
       </div>
@@ -145,7 +141,7 @@
     
       <div class="container nopadding-md">
         <div class="py-5" id="board"
-          style=margin-top:0>
+          >
           
           <div class="container">
             <div class="row">
@@ -177,6 +173,49 @@ It’s messed up. Chicken’s 8 dollars a pound at Whole Foods.
             <i class="iconfont icon-date"></i>&nbsp;2020-05-23
           </div>
         
+        
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <div class="col-12 col-md-12 mx-auto index-info">
+      <a class="index-header" href="/2020/04/10/%E7%96%91%E6%83%91/">Python 引号的处理</a>
+
+      <a href="/2020/04/10/%E7%96%91%E6%83%91/" class="index-excerpt">
+        
+        
+          
+        
+        <div>一直以来的疑惑，今天终于解决了
+描述现在有一个随机数：
+a=random.uniform(10,20)
+想要输入以下效果：
+"15.31"
+就要走一下步骤：
+b = float(format(a,'.3f'))
+strb = str(b)
+print("\""+strb+"\"")
+致谢感谢wwh曾经在量化分析时给我提供的思路
+</div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>&nbsp;2020-04-10
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/Python/">Python</a>
+            
+          </div>
         
         
       </div>
@@ -225,45 +264,6 @@ rand</div>
     
     
     <div class="col-12 col-md-12 mx-auto index-info">
-      <a class="index-header" href="/2020/04/10/%E7%96%91%E6%83%91/">Python 引号的处理</a>
-
-      <a href="/2020/04/10/%E7%96%91%E6%83%91/" class="index-excerpt">
-        
-        
-          
-        
-        <div>一直以来的疑惑，今天终于解决了
-描述现在有一个随机数：
-a=random.uniform(10,20)想要输入以下效果：
-&quot;15.31&quot;就要走一下步骤：
-b = float(format(a,&#39;.3f&#39;))
-strb = str(b)
-print(&quot;\&quot;&quot;+strb+&quot;\&quot;&quot;)致谢感谢wwh曾经在量化分</div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>&nbsp;2020-04-10
-          </div>
-        
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-category"></i>
-            
-              <a href="/categories/Python/">Python</a>
-            
-          </div>
-        
-        
-      </div>
-    </div>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <div class="col-12 col-md-12 mx-auto index-info">
       <a class="index-header" href="/2020/04/10/Markdown%E8%AF%AD%E6%B3%95/">Markdown语法</a>
 
       <a href="/2020/04/10/Markdown%E8%AF%AD%E6%B3%95/" class="index-excerpt">
@@ -273,14 +273,21 @@ print(&quot;\&quot;&quot;+strb+&quot;\&quot;&quot;)致谢感谢wwh曾经在量�
         
         <div>一、标题# 一级标题
 ## 二级标题
-### 三级标题效果如下：
-一级标题二级标题三级标题二、字体**粗体**** 粗体 **
-*斜体*斜体
-***斜体加粗***斜体加粗
-~~删除线~~删除线
-&lt;u&gt;下划线&lt;u&gt;下划线
+### 三级标题
+效果如下：
+一级标题二级标题三级标题二、字体**粗体**
+** 粗体 **
+*斜体*
+斜体
+***斜体加粗***
+斜体加粗
+~~删除线~~
+删除线
+&lt;u&gt;下划线&lt;u&gt;
+下划线
 三、引用&gt;引用
 &gt;&gt;下一次那个
+
 引用回车下一行，两下回车退出
 
 这个二重
@@ -290,7 +297,8 @@ print(&quot;\&quot;&quot;+strb+&quot;\&quot;&quot;)致谢感谢wwh曾经在量�
 
 
 四、分割线---
-五、图片六、超链接七、列表</div>
+
+五、图片六</div>
       </a>
 
       <div class="index-btm post-metas">
@@ -389,6 +397,29 @@ print(&quot;\&quot;&quot;+strb+&quot;\&quot;&quot;)致谢感谢wwh曾经在量�
   
 
   
+    <!-- APlayer 音乐播放器 -->
+    <div id="aplayer"></div>
+    <script defer src="https://cdn.staticfile.org/aplayer/1.10.1/APlayer.min.js" ></script>
+<link  rel="stylesheet" href="https://cdn.staticfile.org/aplayer/1.10.1/APlayer.min.css" />
+<script type="text/javascript">
+  var oldLoadAp = window.onload;
+  window.onload = function () {
+    oldLoadAp && oldLoadAp();
+
+    new APlayer({
+      container: document.getElementById('aplayer'),
+      fixed: true,
+      autoplay: 'false' === 'true',
+      loop: 'all',
+      order: 'random',
+      theme: '#b7daff',
+      preload: 'none',
+      audio: [{"name":"Jingle Bell Rock","artist":"Paniyolo","url":"/songs/jingle bell rock.mp3","cover":"/img/jack.jpg"},{"name":"Light of the Seven","artist":"Remin","url":"/songs/light of the seven.mp3","cover":"/img/jack.jpg"},{"name":"Yesterday Once More","artist":"Carpenters","url":"/songs/yesterday once more.mp3","cover":"/img/jack.jpg"}]
+    });
+  }
+</script>
+
+  
 
   
 
@@ -437,7 +468,7 @@ print(&quot;\&quot;&quot;+strb+&quot;\&quot;&quot;)致谢感谢wwh曾经在量�
     var typed = new Typed('#subtitle', {
       strings: [
         '  ',
-        "An elegant Material-Design theme for Hexo&nbsp;",
+        "&nbsp;",
       ],
       cursorChar: "_",
       typeSpeed: 70,

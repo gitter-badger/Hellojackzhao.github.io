@@ -46,11 +46,11 @@
 
 
 <body>
-  <header style="height: 70vh;">
+  <header style="height: 40vh;">
     <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
   <div class="container">
     <a class="navbar-brand"
-       href="/">&nbsp;<strong>Fluid</strong>&nbsp;</a>
+       href="/">&nbsp;<strong>JackZhao</strong>&nbsp;</a>
 
     <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
             data-target="#navbarSupportedContent"
@@ -122,7 +122,7 @@
          style="background: url('/img/default.png') no-repeat center center;
            background-size: cover;">
       <div class="full-bg-img">
-        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0)">
           <div class="container text-center white-text fadeInUp">
             <span class="h2" id="subtitle">
               
@@ -181,17 +181,30 @@
         <div class="py-5" id="board">
           <div class="post-content mx-auto" id="post">
             
+              <p class="note note-info">
+                
+                  本文最后更新于：a month ago
+                
+              </p>
+            
             <article class="markdown-body">
-              <h1 id="一、标题"><a href="#一、标题" class="headerlink" title="一、标题"></a>一、标题</h1><pre><code># 一级标题
+              <h1 id="一、标题"><a href="#一、标题" class="headerlink" title="一、标题"></a>一、标题</h1><pre><code class="hljs clean"># 一级标题
 ## 二级标题
-### 三级标题</code></pre><p>效果如下：</p>
-<h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><h3 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h3><h1 id="二、字体"><a href="#二、字体" class="headerlink" title="二、字体"></a>二、字体</h1><pre><code>**粗体**</code></pre><p>** 粗体 **</p>
-<pre><code>*斜体*</code></pre><p><em>斜体</em></p>
-<pre><code>***斜体加粗***</code></pre><p><strong><em>斜体加粗</em></strong></p>
-<pre><code>~~删除线~~</code></pre><p><del>删除线</del></p>
-<pre><code>&lt;u&gt;下划线&lt;u&gt;</code></pre><p><u>下划线<u></p>
-<h1 id="三、引用"><a href="#三、引用" class="headerlink" title="三、引用"></a>三、引用</h1><pre><code>&gt;引用
-&gt;&gt;下一次那个</code></pre><blockquote>
+### 三级标题</code></pre>
+<p>效果如下：</p>
+<h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><h3 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h3><h1 id="二、字体"><a href="#二、字体" class="headerlink" title="二、字体"></a>二、字体</h1><pre><code class="hljs asciidoc">*<span class="hljs-strong">*粗体*</span><span class="hljs-strong">*</span></code></pre>
+<p>** 粗体 **</p>
+<pre><code class="hljs asciidoc"><span class="hljs-strong">*斜体*</span></code></pre>
+<p><em>斜体</em></p>
+<pre><code class="hljs asciidoc">**<span class="hljs-strong">*斜体加粗*</span>*<span class="hljs-strong">*</span></code></pre>
+<p><strong><em>斜体加粗</em></strong></p>
+<pre><code class="hljs haml">~~删除线~~</code></pre>
+<p><del>删除线</del></p>
+<pre><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">u</span>&gt;</span>下划线<span class="hljs-tag">&lt;<span class="hljs-name">u</span>&gt;</span></code></pre>
+<p><u>下划线<u></p>
+<h1 id="三、引用"><a href="#三、引用" class="headerlink" title="三、引用"></a>三、引用</h1><pre><code class="hljs ruby">&gt;引用
+<span class="hljs-meta">&gt;&gt;</span>下一次那个</code></pre>
+<blockquote>
 <p>引用<br>回车下一行，两下回车退出</p>
 <blockquote>
 <p>这个二重</p>
@@ -200,20 +213,24 @@
 </blockquote>
 </blockquote>
 </blockquote>
-<h1 id="四、分割线"><a href="#四、分割线" class="headerlink" title="四、分割线"></a>四、分割线</h1><pre><code>---</code></pre><hr>
-<h1 id="五、图片"><a href="#五、图片" class="headerlink" title="五、图片"></a>五、图片</h1><h1 id="六、超链接"><a href="#六、超链接" class="headerlink" title="六、超链接"></a>六、超链接</h1><h1 id="七、列表"><a href="#七、列表" class="headerlink" title="七、列表"></a>七、列表</h1><pre><code>- 无序列表（有空格）
-+ 无序
-* 无序</code></pre><ul>
+<h1 id="四、分割线"><a href="#四、分割线" class="headerlink" title="四、分割线"></a>四、分割线</h1><pre><code class="hljs yaml"><span class="hljs-meta">---</span></code></pre>
+<hr>
+<h1 id="五、图片"><a href="#五、图片" class="headerlink" title="五、图片"></a>五、图片</h1><h1 id="六、超链接"><a href="#六、超链接" class="headerlink" title="六、超链接"></a>六、超链接</h1><h1 id="七、列表"><a href="#七、列表" class="headerlink" title="七、列表"></a>七、列表</h1><pre><code class="hljs markdown"><span class="hljs-bullet">- </span>无序列表（有空格）
+<span class="hljs-bullet">+ </span>无序
+<span class="hljs-bullet">* </span>无序</code></pre>
+<ul>
 <li>佛跳墙</li>
 <li>回车继续</li>
 <li>两次退出</li>
 </ul>
-<pre><code>1. 有序列表
-2. 有空格</code></pre><p>两级列表如下：</p>
-<pre><code>- 一级
+<pre><code class="hljs angelscript"><span class="hljs-number">1.</span> 有序列表
+<span class="hljs-number">2.</span> 有空格</code></pre>
+<p>两级列表如下：</p>
+<pre><code class="hljs angelscript">- 一级
 三空格- 二级
-   1. 
-   2.  </code></pre><ul>
+   <span class="hljs-number">1.</span> 
+   <span class="hljs-number">2.</span></code></pre>
+<ul>
 <li>一级<ul>
 <li>二级1</li>
 <li>二级2</li>
@@ -228,9 +245,10 @@
 </ol>
 </li>
 </ul>
-<h1 id="八、表格"><a href="#八、表格" class="headerlink" title="八、表格"></a>八、表格</h1><pre><code>表头|表头|表头
----|:--:|---:
-内容|内容|内容</code></pre><table>
+<h1 id="八、表格"><a href="#八、表格" class="headerlink" title="八、表格"></a>八、表格</h1><pre><code class="hljs elixir">表头|表头|表头
+---|<span class="hljs-symbol">:--</span><span class="hljs-symbol">:|---</span><span class="hljs-symbol">:</span>
+内容|内容|内容</code></pre>
+<table>
 <thead>
 <tr>
 <th>表头</th>
@@ -249,9 +267,13 @@
 <td align="right">开心</td>
 </tr>
 </tbody></table>
-<h1 id="九、代码"><a href="#九、代码" class="headerlink" title="九、代码"></a>九、代码</h1><pre><code>`代码内容一行`</code></pre><p><code>代码内容</code></p>
+<h1 id="九、代码"><a href="#九、代码" class="headerlink" title="九、代码"></a>九、代码</h1><pre><code class="hljs arcade"><span class="hljs-string">`代码内容一行`</span></code></pre>
+<p><code>代码内容</code></p>
 <p>下面是代码块：</p>
-<pre><code>上下三个点，一行效果不一样。</code></pre><h1 id="十、流程图"><a href="#十、流程图" class="headerlink" title="十、流程图"></a>十、流程图</h1>
+<pre><code class="hljs plain">上下三个点，一行效果不一样。</code></pre>
+
+
+<h1 id="十、流程图"><a href="#十、流程图" class="headerlink" title="十、流程图"></a>十、流程图</h1>
             </article>
             <hr>
             <div>
@@ -260,16 +282,16 @@
                 
               </div>
               
-                <p class="note note-warning">本博客所有文章除特别声明外，均采用 <a href="https://zh.wikipedia.org/wiki/Wikipedia:CC_BY-SA_3.0%E5%8D%8F%E8%AE%AE%E6%96%87%E6%9C%AC" target="_blank" rel="nofollow noopener noopener">CC BY-SA 3.0协议</a> 。转载请注明出处！</p>
+                <p class="note note-warning">本博客所有文章除特别声明外,转载请注明出处！</p>
               
               
                 <div class="post-prevnext row">
                   <div class="post-prev col-6">
                     
                     
-                      <a href="/2020/04/10/%E7%96%91%E6%83%91/">
+                      <a href="/2020/04/10/%E5%B8%B8%E7%94%A8/">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">Python 引号的处理</span>
+                        <span class="hidden-mobile">Python 常用操作</span>
                         <span class="visible-mobile">上一篇</span>
                       </a>
                     
@@ -342,6 +364,29 @@
   
 
   
+    <!-- APlayer 音乐播放器 -->
+    <div id="aplayer"></div>
+    <script defer src="https://cdn.staticfile.org/aplayer/1.10.1/APlayer.min.js" ></script>
+<link  rel="stylesheet" href="https://cdn.staticfile.org/aplayer/1.10.1/APlayer.min.css" />
+<script type="text/javascript">
+  var oldLoadAp = window.onload;
+  window.onload = function () {
+    oldLoadAp && oldLoadAp();
+
+    new APlayer({
+      container: document.getElementById('aplayer'),
+      fixed: true,
+      autoplay: 'false' === 'true',
+      loop: 'all',
+      order: 'random',
+      theme: '#b7daff',
+      preload: 'none',
+      audio: [{"name":"Jingle Bell Rock","artist":"Paniyolo","url":"/songs/jingle bell rock.mp3","cover":"/img/jack.jpg"},{"name":"Light of the Seven","artist":"Remin","url":"/songs/light of the seven.mp3","cover":"/img/jack.jpg"},{"name":"Yesterday Once More","artist":"Carpenters","url":"/songs/yesterday once more.mp3","cover":"/img/jack.jpg"}]
+    });
+  }
+</script>
+
+  
 
   
 
@@ -387,7 +432,7 @@
         listClass: 'tocbot-list',
         isCollapsedClass: 'tocbot-is-collapsed',
         collapsibleClass: 'tocbot-is-collapsible',
-        collapseDepth: 0,
+        collapseDepth: 1,
         scrollSmooth: true,
         headingsOffset: -boardTop
       });

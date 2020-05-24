@@ -46,11 +46,11 @@
 
 
 <body>
-  <header style="height: 60vh;">
+  <header style="height: 50vh;">
     <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
   <div class="container">
     <a class="navbar-brand"
-       href="/">&nbsp;<strong>Fluid</strong>&nbsp;</a>
+       href="/">&nbsp;<strong>JackZhao</strong>&nbsp;</a>
 
     <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
             data-target="#navbarSupportedContent"
@@ -190,7 +190,7 @@
 </div>
 <div class="mt-5 markdown-body">
   <h2 id="关于我"><a href="#关于我" class="headerlink" title="关于我"></a>关于我</h2><p>不敢高声语，恐惊天上人。<br>名字是玩CS1.6取得。</p>
-<h2 id="联系"><a href="#联系" class="headerlink" title="联系"></a>联系</h2><p><a href="mailto:zws365@163.com">zws365@163.com</a> 常用<br><a href="mailto:doublewenzhao@gmail.com">doublewenzhao@gmail.com</a></p>
+<h2 id="联系"><a href="#联系" class="headerlink" title="联系"></a>联系</h2><p><a href="mailto:zws365@163.com">zws365@163.com</a> </p>
 <h2 id="致谢"><a href="#致谢" class="headerlink" title="致谢"></a>致谢</h2><p>感谢<a href="https://github.com/" target="_blank" rel="noopener">github</a>提供得托管服务<br>由<a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>强力驱动</p>
 <h2 id="版权声明"><a href="#版权声明" class="headerlink" title="版权声明"></a>版权声明</h2><p>未特殊标注的，所有文章皆为本人撰写或翻译。<br>任何媒体皆可对本站建立直接链接。<br>任何形式的转载均需与本人联系并取得本人同意。<br>转载本人的文字若有任何修改， 须预先征得本人许可。</p>
 <p><strong>如有侵权请与本人联系。</strong></p>
@@ -234,6 +234,29 @@
   </div>
 </div>
   
+
+  
+    <!-- APlayer 音乐播放器 -->
+    <div id="aplayer"></div>
+    <script defer src="https://cdn.staticfile.org/aplayer/1.10.1/APlayer.min.js" ></script>
+<link  rel="stylesheet" href="https://cdn.staticfile.org/aplayer/1.10.1/APlayer.min.css" />
+<script type="text/javascript">
+  var oldLoadAp = window.onload;
+  window.onload = function () {
+    oldLoadAp && oldLoadAp();
+
+    new APlayer({
+      container: document.getElementById('aplayer'),
+      fixed: true,
+      autoplay: 'false' === 'true',
+      loop: 'all',
+      order: 'random',
+      theme: '#b7daff',
+      preload: 'none',
+      audio: [{"name":"Jingle Bell Rock","artist":"Paniyolo","url":"/songs/jingle bell rock.mp3","cover":"/img/jack.jpg"},{"name":"Light of the Seven","artist":"Remin","url":"/songs/light of the seven.mp3","cover":"/img/jack.jpg"},{"name":"Yesterday Once More","artist":"Carpenters","url":"/songs/yesterday once more.mp3","cover":"/img/jack.jpg"}]
+    });
+  }
+</script>
 
   
 

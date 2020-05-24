@@ -46,11 +46,11 @@
 
 
 <body>
-  <header style="height: 70vh;">
+  <header style="height: 40vh;">
     <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
   <div class="container">
     <a class="navbar-brand"
-       href="/">&nbsp;<strong>Fluid</strong>&nbsp;</a>
+       href="/">&nbsp;<strong>JackZhao</strong>&nbsp;</a>
 
     <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
             data-target="#navbarSupportedContent"
@@ -122,7 +122,7 @@
          style="background: url('/img/default.png') no-repeat center center;
            background-size: cover;">
       <div class="full-bg-img">
-        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0)">
           <div class="container text-center white-text fadeInUp">
             <span class="h2" id="subtitle">
               
@@ -143,7 +143,7 @@
                   
                   <span class="post-meta mr-2">
                     <i class="iconfont icon-chart"></i>
-                    195 字
+                    167 字
                   </span>
                 
 
@@ -153,7 +153,7 @@
                       <i class="iconfont icon-clock-fill"></i>
                     
                     
-                    3
+                    2
                      分钟
                   </span>
                 
@@ -181,24 +181,39 @@
         <div class="py-5" id="board">
           <div class="post-content mx-auto" id="post">
             
+              <p class="note note-info">
+                
+                  本文最后更新于：a month ago
+                
+              </p>
+            
             <article class="markdown-body">
               <h1 id="Python-常用操作"><a href="#Python-常用操作" class="headerlink" title="Python 常用操作"></a>Python 常用操作</h1><h2 id="1-Python随机生成的几种方法"><a href="#1-Python随机生成的几种方法" class="headerlink" title="1 Python随机生成的几种方法"></a>1 Python随机生成的几种方法</h2><p>各种随机：</p>
-<pre><code>import random
-random.uniform(10,20) #random generate [10,20] 的 float
-random.randint(20,30) #random generate [20,30] 的 整数
-random.randrange(0,101,2) #随机选取0到100间的偶数
-random.choice(&#39;abcdefg&amp;#%^*f&#39;) #随机字符
-random.choice ( [&#39;apple&#39;,&#39;pear&#39;, &#39;peach&#39;, &#39;orange&#39;, &#39;lemon&#39;] ) #随机选取字符串</code></pre><p>洗牌：  </p>
-<pre><code>items = [1, 2, 3, 4, 5, 6]  
-random.shuffle(items)  </code></pre><h2 id="2-保留有效数位"><a href="#2-保留有效数位" class="headerlink" title="2 保留有效数位"></a>2 保留有效数位</h2><h3 id="字符串"><a href="#字符串" class="headerlink" title="字符串"></a>字符串</h3><p>保留有效数字：</p>
-<pre><code> format(12.456789, &#39;.3g&#39;)
-&#39;12.5&#39;</code></pre><p>小数点后n位：</p>
-<pre><code>`format(12.456789,&#39;.3f&#39;)</code></pre><p>科学计数法：</p>
-<pre><code>format(12.456789, &#39;.3e&#39;)
-&#39;1.246e+01&#39;</code></pre><p>换成百分比之后保留小数点后n位数：</p>
-<pre><code>format(12.456789, &#39;.3%&#39;)
-&#39;1245.679%&#39;</code></pre><p>浮点数：</p>
-<pre><code>float(format(12.456789, &#39;.3g&#39;))</code></pre>
+<pre><code class="hljs autoit">import <span class="hljs-built_in">random</span>
+<span class="hljs-built_in">random</span>.uniform(<span class="hljs-number">10</span>,<span class="hljs-number">20</span>) <span class="hljs-meta">#random generate [10,20] 的 float</span>
+<span class="hljs-built_in">random</span>.randint(<span class="hljs-number">20</span>,<span class="hljs-number">30</span>) <span class="hljs-meta">#random generate [20,30] 的 整数</span>
+<span class="hljs-built_in">random</span>.randrange(<span class="hljs-number">0</span>,<span class="hljs-number">101</span>,<span class="hljs-number">2</span>) <span class="hljs-meta">#随机选取0到100间的偶数</span>
+<span class="hljs-built_in">random</span>.choice(<span class="hljs-string">'abcdefg&amp;#%^*f'</span>) <span class="hljs-meta">#随机字符</span>
+<span class="hljs-built_in">random</span>.choice ( [<span class="hljs-string">'apple'</span>,<span class="hljs-string">'pear'</span>, <span class="hljs-string">'peach'</span>, <span class="hljs-string">'orange'</span>, <span class="hljs-string">'lemon'</span>] ) <span class="hljs-meta">#随机选取字符串</span></code></pre>
+<p>洗牌：  </p>
+<pre><code class="hljs angelscript">items = [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>, <span class="hljs-number">6</span>]  
+random.shuffle(items)</code></pre>
+<h2 id="2-保留有效数位"><a href="#2-保留有效数位" class="headerlink" title="2 保留有效数位"></a>2 保留有效数位</h2><h3 id="字符串"><a href="#字符串" class="headerlink" title="字符串"></a>字符串</h3><p>保留有效数字：</p>
+<pre><code class="hljs livecodeserver"> <span class="hljs-built_in">format</span>(<span class="hljs-number">12.456789</span>, <span class="hljs-string">'.3g'</span>)
+<span class="hljs-string">'12.5'</span></code></pre>
+<p>小数点后n位：</p>
+<pre><code class="hljs gauss">`<span class="hljs-keyword">format</span>(<span class="hljs-number">12.456789</span>,'<span class="hljs-number">.3</span>f')</code></pre>
+<p>科学计数法：</p>
+<pre><code class="hljs stylus"><span class="hljs-function"><span class="hljs-title">format</span><span class="hljs-params">(<span class="hljs-number">12.456789</span>, <span class="hljs-string">'.3e'</span>)</span></span>
+<span class="hljs-string">'1.246e+01'</span></code></pre>
+
+<p>换成百分比之后保留小数点后n位数：</p>
+<pre><code class="hljs stylus"><span class="hljs-function"><span class="hljs-title">format</span><span class="hljs-params">(<span class="hljs-number">12.456789</span>, <span class="hljs-string">'.3%'</span>)</span></span>
+<span class="hljs-string">'1245.679%'</span></code></pre>
+<p>浮点数：</p>
+<pre><code class="hljs stylus"><span class="hljs-function"><span class="hljs-title">float</span><span class="hljs-params">(format(<span class="hljs-number">12.456789</span>, <span class="hljs-string">'.3g'</span>)</span></span>)</code></pre>
+
+
             </article>
             <hr>
             <div>
@@ -214,16 +229,16 @@ random.shuffle(items)  </code></pre><h2 id="2-保留有效数位"><a href="#2-�
                 
               </div>
               
-                <p class="note note-warning">本博客所有文章除特别声明外，均采用 <a href="https://zh.wikipedia.org/wiki/Wikipedia:CC_BY-SA_3.0%E5%8D%8F%E8%AE%AE%E6%96%87%E6%9C%AC" target="_blank" rel="nofollow noopener noopener">CC BY-SA 3.0协议</a> 。转载请注明出处！</p>
+                <p class="note note-warning">本博客所有文章除特别声明外,转载请注明出处！</p>
               
               
                 <div class="post-prevnext row">
                   <div class="post-prev col-6">
                     
                     
-                      <a href="/2020/05/23/%E6%9C%89%E6%9C%BA%E9%A3%9F%E5%93%81%E7%9C%9F%E5%9D%91%E7%88%B9/">
+                      <a href="/2020/04/10/%E7%96%91%E6%83%91/">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">有机食品真坑爹</span>
+                        <span class="hidden-mobile">Python 引号的处理</span>
                         <span class="visible-mobile">上一篇</span>
                       </a>
                     
@@ -231,8 +246,8 @@ random.shuffle(items)  </code></pre><h2 id="2-保留有效数位"><a href="#2-�
                   <div class="post-next col-6">
                     
                     
-                      <a href="/2020/04/10/%E7%96%91%E6%83%91/">
-                        <span class="hidden-mobile">Python 引号的处理</span>
+                      <a href="/2020/04/10/Markdown%E8%AF%AD%E6%B3%95/">
+                        <span class="hidden-mobile">Markdown语法</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
@@ -296,6 +311,29 @@ random.shuffle(items)  </code></pre><h2 id="2-保留有效数位"><a href="#2-�
   
 
   
+    <!-- APlayer 音乐播放器 -->
+    <div id="aplayer"></div>
+    <script defer src="https://cdn.staticfile.org/aplayer/1.10.1/APlayer.min.js" ></script>
+<link  rel="stylesheet" href="https://cdn.staticfile.org/aplayer/1.10.1/APlayer.min.css" />
+<script type="text/javascript">
+  var oldLoadAp = window.onload;
+  window.onload = function () {
+    oldLoadAp && oldLoadAp();
+
+    new APlayer({
+      container: document.getElementById('aplayer'),
+      fixed: true,
+      autoplay: 'false' === 'true',
+      loop: 'all',
+      order: 'random',
+      theme: '#b7daff',
+      preload: 'none',
+      audio: [{"name":"Jingle Bell Rock","artist":"Paniyolo","url":"/songs/jingle bell rock.mp3","cover":"/img/jack.jpg"},{"name":"Light of the Seven","artist":"Remin","url":"/songs/light of the seven.mp3","cover":"/img/jack.jpg"},{"name":"Yesterday Once More","artist":"Carpenters","url":"/songs/yesterday once more.mp3","cover":"/img/jack.jpg"}]
+    });
+  }
+</script>
+
+  
 
   
 
@@ -341,7 +379,7 @@ random.shuffle(items)  </code></pre><h2 id="2-保留有效数位"><a href="#2-�
         listClass: 'tocbot-list',
         isCollapsedClass: 'tocbot-is-collapsed',
         collapsibleClass: 'tocbot-is-collapsible',
-        collapseDepth: 0,
+        collapseDepth: 1,
         scrollSmooth: true,
         headingsOffset: -boardTop
       });
