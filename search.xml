@@ -81,6 +81,9 @@
       <categories>
         <category>Markdown</category>
       </categories>
+      <tags>
+        <tag>学习手册</tag>
+      </tags>
   </entry>
   <entry>
     <title>Python 常用操作（1）</title>
@@ -105,6 +108,9 @@
       <categories>
         <category>Python</category>
       </categories>
+      <tags>
+        <tag>学习手册</tag>
+      </tags>
   </entry>
   <entry>
     <title>hello word</title>
@@ -137,6 +143,9 @@
       <categories>
         <category>脱口秀</category>
       </categories>
+      <tags>
+        <tag>英文</tag>
+      </tags>
   </entry>
   <entry>
     <title>Python 引号的处理</title>
