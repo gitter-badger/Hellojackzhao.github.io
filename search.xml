@@ -163,4 +163,184 @@
         <category>Python</category>
       </categories>
   </entry>
+  <entry>
+    <title>简单加密方式</title>
+    <url>/2020/05/26/%E7%AE%80%E5%8D%95%E7%9A%84%E5%AF%86%E7%A0%81%E5%8A%A0%E5%AF%86%E6%96%B9%E5%BC%8F/</url>
+    <content><![CDATA[<h1 id="1-凯撒加密"><a href="#1-凯撒加密" class="headerlink" title="1. 凯撒加密"></a>1. 凯撒加密</h1><p>凯撒密码（Caesar）：将明文中的 <strong>每个字母</strong> 都按照其在字母表中的顺序向后（或向前）<strong>移动固定数目</strong>（循环移动）作为密文。</p>
+<p>比如，偏移量是右移3：</p>
+<p>明文字母表：ABC</p>
+<p>密文字母表：CDE</p>
+<p>注意：在英语文字中，使用频率最高的字母永远是e。这是解密的关键。</p>
+<h1 id="2-单表替换"><a href="#2-单表替换" class="headerlink" title="2.单表替换"></a>2.单表替换</h1><p>没什么好说的，一一对应换一下</p>
+<h1 id="3-栅栏加密法"><a href="#3-栅栏加密法" class="headerlink" title="3. 栅栏加密法"></a>3. 栅栏加密法</h1><p>栅栏加密法将明文分为若干栏（行），每个栏的字母数量相同与key相同，如meet me after party,首先骂我们去掉空格，明文就变为meetmeafterparty。一共16个字母，key为4，则我们可以将其分为16/key=4栏，从上到下排列，每栏个字母个数为4。</p>
+<p>meet</p>
+<p>meaf</p>
+<p>terp</p>
+<p>arty</p>
+<p>输出的密文为：mmtaeeerearttfpy。 也就是从上到下，从左到右，依次取字母。</p>
+<h1 id="4-公钥密码"><a href="#4-公钥密码" class="headerlink" title="4.公钥密码"></a>4.公钥密码</h1><p>费马猜想：<br>$$<br>x^{n}+y^{n}=z^{n}<br>$$<br>不写了，自己百度吧。</p>
+<h1 id="5-摩斯密码"><a href="#5-摩斯密码" class="headerlink" title="5.摩斯密码"></a>5.摩斯密码</h1><table>
+<thead>
+<tr>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">字符</td>
+<td align="center">代码</td>
+<td align="center">字符</td>
+<td align="center">代码</td>
+<td align="center">字符</td>
+<td align="center">代码</td>
+<td align="center">字符</td>
+<td align="center">代码</td>
+<td align="center">字符</td>
+<td align="center">代码</td>
+<td align="center">字符</td>
+<td align="center">代码</td>
+<td align="center">字符</td>
+<td align="center">代码</td>
+</tr>
+<tr>
+<td align="center"><a href="https://zh.wikipedia.org/wiki/A" target="_blank" rel="noopener">A</a></td>
+<td align="center"><a href="https://upload.wikimedia.org/wikipedia/commons/f/f3/A_morse_code.ogg" target="_blank" rel="noopener"><code>·-</code></a></td>
+<td align="center"><a href="https://zh.wikipedia.org/wiki/B" target="_blank" rel="noopener">B</a></td>
+<td align="center"><a href="https://upload.wikimedia.org/wikipedia/commons/b/b1/B_morse_code.ogg" target="_blank" rel="noopener"><code>-···</code></a></td>
+<td align="center"><a href="https://zh.wikipedia.org/wiki/C" target="_blank" rel="noopener">C</a></td>
+<td align="center"><a href="https://upload.wikimedia.org/wikipedia/commons/2/25/C_morse_code.ogg" target="_blank" rel="noopener"><code>-·-·</code></a></td>
+<td align="center"><a href="https://zh.wikipedia.org/wiki/D" target="_blank" rel="noopener">D</a></td>
+<td align="center"><a href="https://upload.wikimedia.org/wikipedia/commons/9/92/D_morse_code.ogg" target="_blank" rel="noopener"><code>-··</code></a></td>
+<td align="center"><a href="https://zh.wikipedia.org/wiki/E" target="_blank" rel="noopener">E</a></td>
+<td align="center"><a href="https://upload.wikimedia.org/wikipedia/commons/e/e7/E_morse_code.ogg" target="_blank" rel="noopener"><code>·</code></a></td>
+<td align="center"><a href="https://zh.wikipedia.org/wiki/F" target="_blank" rel="noopener">F</a></td>
+<td align="center"><a href="https://upload.wikimedia.org/wikipedia/commons/6/63/F_morse_code.ogg" target="_blank" rel="noopener"><code>··-·</code></a></td>
+<td align="center"><a href="https://zh.wikipedia.org/wiki/G" target="_blank" rel="noopener">G</a></td>
+<td align="center"><a href="https://upload.wikimedia.org/wikipedia/commons/7/72/G_morse_code.ogg" target="_blank" rel="noopener"><code>--·</code></a></td>
+</tr>
+<tr>
+<td align="center"><a href="https://zh.wikipedia.org/wiki/H" target="_blank" rel="noopener">H</a></td>
+<td align="center"><a href="https://upload.wikimedia.org/wikipedia/commons/9/93/H_morse_code.ogg" target="_blank" rel="noopener"><code>····</code></a></td>
+<td align="center"><a href="https://zh.wikipedia.org/wiki/I" target="_blank" rel="noopener">I</a></td>
+<td align="center"><a href="https://upload.wikimedia.org/wikipedia/commons/d/d9/I_morse_code.ogg" target="_blank" rel="noopener"><code>··</code></a></td>
+<td align="center"><a href="https://zh.wikipedia.org/wiki/J" target="_blank" rel="noopener">J</a></td>
+<td align="center"><a href="https://upload.wikimedia.org/wikipedia/commons/9/9e/J_morse_code.ogg" target="_blank" rel="noopener"><code>·---</code></a></td>
+<td align="center"><a href="https://zh.wikipedia.org/wiki/K" target="_blank" rel="noopener">K</a></td>
+<td align="center"><a href="https://upload.wikimedia.org/wikipedia/commons/6/6a/K_morse_code.ogg" target="_blank" rel="noopener"><code>-·-</code></a></td>
+<td align="center"><a href="https://zh.wikipedia.org/wiki/L" target="_blank" rel="noopener">L</a></td>
+<td align="center"><a href="https://upload.wikimedia.org/wikipedia/commons/a/a8/L_morse_code.ogg" target="_blank" rel="noopener"><code>·-··</code></a></td>
+<td align="center"><a href="https://zh.wikipedia.org/wiki/M" target="_blank" rel="noopener">M</a></td>
+<td align="center"><a href="https://upload.wikimedia.org/wikipedia/commons/9/97/M_morse_code.ogg" target="_blank" rel="noopener"><code>--</code></a></td>
+<td align="center"><a href="https://zh.wikipedia.org/wiki/N" target="_blank" rel="noopener">N</a></td>
+<td align="center"><a href="https://upload.wikimedia.org/wikipedia/commons/5/5a/N_morse_code.ogg" target="_blank" rel="noopener"><code>-·</code></a></td>
+</tr>
+<tr>
+<td align="center"><a href="https://zh.wikipedia.org/wiki/O" target="_blank" rel="noopener">O</a></td>
+<td align="center"><a href="https://upload.wikimedia.org/wikipedia/commons/4/41/O_morse_code.ogg" target="_blank" rel="noopener"><code>---</code></a></td>
+<td align="center"><a href="https://zh.wikipedia.org/wiki/P" target="_blank" rel="noopener">P</a></td>
+<td align="center"><a href="https://upload.wikimedia.org/wikipedia/commons/c/c6/P_morse_code.ogg" target="_blank" rel="noopener"><code>·--·</code></a></td>
+<td align="center"><a href="https://zh.wikipedia.org/wiki/Q" target="_blank" rel="noopener">Q</a></td>
+<td align="center"><a href="https://upload.wikimedia.org/wikipedia/commons/f/f0/Q_morse_code.ogg" target="_blank" rel="noopener"><code>--·-</code></a></td>
+<td align="center"><a href="https://zh.wikipedia.org/wiki/R" target="_blank" rel="noopener">R</a></td>
+<td align="center"><a href="https://upload.wikimedia.org/wikipedia/commons/e/ea/R_morse_code.ogg" target="_blank" rel="noopener"><code>·-·</code></a></td>
+<td align="center"><a href="https://zh.wikipedia.org/wiki/S" target="_blank" rel="noopener">S</a></td>
+<td align="center"><a href="https://upload.wikimedia.org/wikipedia/commons/d/d8/S_morse_code.ogg" target="_blank" rel="noopener"><code>···</code></a></td>
+<td align="center"><a href="https://zh.wikipedia.org/wiki/T" target="_blank" rel="noopener">T</a></td>
+<td align="center"><a href="https://upload.wikimedia.org/wikipedia/commons/b/ba/T_morse_code.ogg" target="_blank" rel="noopener"><code>-</code></a></td>
+<td align="center"><a href="https://zh.wikipedia.org/wiki/U" target="_blank" rel="noopener">U</a></td>
+<td align="center"><a href="https://upload.wikimedia.org/wikipedia/commons/3/34/U_morse_code.ogg" target="_blank" rel="noopener"><code>··-</code></a></td>
+</tr>
+<tr>
+<td align="center"><a href="https://zh.wikipedia.org/wiki/V" target="_blank" rel="noopener">V</a></td>
+<td align="center"><a href="https://upload.wikimedia.org/wikipedia/commons/3/37/V_morse_code.ogg" target="_blank" rel="noopener"><code>···-</code></a></td>
+<td align="center"><a href="https://zh.wikipedia.org/wiki/W" target="_blank" rel="noopener">W</a></td>
+<td align="center"><a href="https://upload.wikimedia.org/wikipedia/commons/6/68/W_morse_code.ogg" target="_blank" rel="noopener"><code>·--</code></a></td>
+<td align="center"><a href="https://zh.wikipedia.org/wiki/X" target="_blank" rel="noopener">X</a></td>
+<td align="center"><a href="https://upload.wikimedia.org/wikipedia/commons/b/be/X_morse_code.ogg" target="_blank" rel="noopener"><code>-··-</code></a></td>
+<td align="center"><a href="https://zh.wikipedia.org/wiki/Y" target="_blank" rel="noopener">Y</a></td>
+<td align="center"><a href="https://upload.wikimedia.org/wikipedia/commons/5/5d/Y_morse_code.ogg" target="_blank" rel="noopener"><code>-·--</code></a></td>
+<td align="center"><a href="https://zh.wikipedia.org/wiki/Z" target="_blank" rel="noopener">Z</a></td>
+<td align="center"><a href="https://upload.wikimedia.org/wikipedia/commons/7/7a/Z_morse_code.ogg" target="_blank" rel="noopener"><code>--··</code></a></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+</tbody></table>
+<p>数字</p>
+<table>
+<thead>
+<tr>
+<th align="center">字符</th>
+<th align="center">长码</th>
+<th align="center">短码</th>
+<th align="center">字符</th>
+<th align="center">长码</th>
+<th align="center">短码</th>
+<th align="center">字符</th>
+<th align="center">长码</th>
+<th align="center">短码</th>
+<th align="center">字符</th>
+<th align="center">长码</th>
+<th align="center">短码</th>
+<th align="center">字符</th>
+<th align="center">长码</th>
+<th align="center">短码</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><a href="https://zh.wikipedia.org/wiki/1" target="_blank" rel="noopener">1</a></td>
+<td align="center"><a href="https://upload.wikimedia.org/wikipedia/commons/9/9b/1_number_morse_code.ogg" target="_blank" rel="noopener"><code>·----</code></a></td>
+<td align="center"><a href="https://upload.wikimedia.org/wikipedia/commons/f/f3/A_morse_code.ogg" target="_blank" rel="noopener"><code>·-</code></a></td>
+<td align="center"><a href="https://zh.wikipedia.org/wiki/2" target="_blank" rel="noopener">2</a></td>
+<td align="center"><a href="https://upload.wikimedia.org/wikipedia/commons/e/ee/2_number_morse_code.ogg" target="_blank" rel="noopener"><code>··---</code></a></td>
+<td align="center"><a href="https://upload.wikimedia.org/wikipedia/commons/3/34/U_morse_code.ogg" target="_blank" rel="noopener"><code>··-</code></a></td>
+<td align="center"><a href="https://zh.wikipedia.org/wiki/3" target="_blank" rel="noopener">3</a></td>
+<td align="center"><a href="https://upload.wikimedia.org/wikipedia/commons/f/fd/3_number_morse_code.ogg" target="_blank" rel="noopener"><code>···--</code></a></td>
+<td align="center"><a href="https://upload.wikimedia.org/wikipedia/commons/3/37/V_morse_code.ogg" target="_blank" rel="noopener"><code>···-</code></a></td>
+<td align="center"><a href="https://zh.wikipedia.org/wiki/4" target="_blank" rel="noopener">4</a></td>
+<td align="center"><a href="https://upload.wikimedia.org/wikipedia/commons/5/5c/4_number_morse_code.ogg" target="_blank" rel="noopener"><code>····-</code></a></td>
+<td align="center"><a href="https://upload.wikimedia.org/wikipedia/commons/5/5c/4_number_morse_code.ogg" target="_blank" rel="noopener"><code>····-</code></a></td>
+<td align="center"><a href="https://zh.wikipedia.org/wiki/5" target="_blank" rel="noopener">5</a></td>
+<td align="center"><a href="https://upload.wikimedia.org/wikipedia/commons/5/52/5_number_morse_code.ogg" target="_blank" rel="noopener"><code>·····</code></a></td>
+<td align="center"><a href="https://upload.wikimedia.org/wikipedia/commons/5/52/5_number_morse_code.ogg" target="_blank" rel="noopener"><code>·····</code></a></td>
+</tr>
+<tr>
+<td align="center"><a href="https://zh.wikipedia.org/wiki/6" target="_blank" rel="noopener">6</a></td>
+<td align="center"><a href="https://upload.wikimedia.org/wikipedia/commons/4/4d/6_number_morse_code.ogg" target="_blank" rel="noopener"><code>-····</code></a></td>
+<td align="center"><a href="https://upload.wikimedia.org/wikipedia/commons/4/4d/6_number_morse_code.ogg" target="_blank" rel="noopener"><code>-····</code></a></td>
+<td align="center"><a href="https://zh.wikipedia.org/wiki/7" target="_blank" rel="noopener">7</a></td>
+<td align="center"><a href="https://upload.wikimedia.org/wikipedia/commons/1/14/7_number_morse_code.ogg" target="_blank" rel="noopener"><code>--···</code></a></td>
+<td align="center"><a href="https://upload.wikimedia.org/wikipedia/commons/b/b1/B_morse_code.ogg" target="_blank" rel="noopener"><code>-···</code></a></td>
+<td align="center"><a href="https://zh.wikipedia.org/wiki/8" target="_blank" rel="noopener">8</a></td>
+<td align="center"><a href="https://upload.wikimedia.org/wikipedia/commons/3/3a/8_number_morse_code.ogg" target="_blank" rel="noopener"><code>---··</code></a></td>
+<td align="center"><a href="https://upload.wikimedia.org/wikipedia/commons/9/92/D_morse_code.ogg" target="_blank" rel="noopener"><code>-··</code></a></td>
+<td align="center"><a href="https://zh.wikipedia.org/wiki/9" target="_blank" rel="noopener">9</a></td>
+<td align="center"><a href="https://upload.wikimedia.org/wikipedia/commons/4/44/9_number_morse_code.ogg" target="_blank" rel="noopener"><code>----·</code></a></td>
+<td align="center"><a href="https://upload.wikimedia.org/wikipedia/commons/5/5a/N_morse_code.ogg" target="_blank" rel="noopener"><code>-·</code></a></td>
+<td align="center"><a href="https://zh.wikipedia.org/wiki/0" target="_blank" rel="noopener">0</a></td>
+<td align="center"><a href="https://upload.wikimedia.org/wikipedia/commons/5/5d/0_number_morse_code.ogg" target="_blank" rel="noopener"><code>-----</code></a></td>
+<td align="center"><a href="https://upload.wikimedia.org/wikipedia/commons/b/ba/T_morse_code.ogg" target="_blank" rel="noopener"><code>-</code></a></td>
+</tr>
+</tbody></table>
+]]></content>
+      <categories>
+        <category>加密方式</category>
+      </categories>
+      <tags>
+        <tag>密码</tag>
+      </tags>
+  </entry>
 </search>
